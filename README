@@ -1,0 +1,60 @@
+ActivePhoto
+A library for handling various photo services.
+
+Abstracts the different services
+
+Photo
+
+attributes:
+  - title
+  - description
+  - keywords
+  - created_at
+  - taken_at
+  - lat
+  - lng
+  - width
+  - height
+  - metadata # => hash of EXIF and IPTC data
+  - sizes    # => hash of size name and dimenisions :large => '300x200'
+  - url(:size)
+  
+  new
+  create
+  destroy
+  update
+  
+Album
+  - title
+  - description
+  - start_date
+  - end_date
+  - keywords
+  - metadata
+  - photos_count
+  
+  new
+  create
+  destroy
+  update
+  add_photo
+  remove_photo
+  clear
+  
+Set
+  - title
+  - description
+  - start_date
+  - end_date
+  - keywords
+  - metadata
+  - albums_count
+  
+  new
+  create
+  destroy
+  update
+  add_album
+  remove_album
+  clear
+
